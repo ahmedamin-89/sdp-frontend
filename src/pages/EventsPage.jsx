@@ -7,6 +7,15 @@ import styles from "./EventsPage.module.css";
 
 const EventsPage = () => {
   const [selectedType, setSelectedType] = useState("Fundraiser");
+  const [selectedEvent, setSelectedEvent] = useState({
+    id: 5,
+    type: "workshop",
+    title: "CPR & AED Training",
+    date: "2024-07-20",
+    location: "Community College",
+    maxAttendees: 15,
+    goalAmount: 10000,
+  });
 
   return (
     <div className={classes.container}>
@@ -26,7 +35,7 @@ const EventsPage = () => {
           <EventList selectedType={selectedType} />
         </div>
         <div className={styles.innerContainer}>
-          <EventDetails />
+          <EventDetails {...selectedEvent} />
         </div>
       </div>
     </div>
