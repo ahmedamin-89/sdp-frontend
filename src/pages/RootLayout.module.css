@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.screen {
+  flex: 1;
+  align-self: stretch;
+  padding: 35px;
+  padding-left: 0;
+  display: flex;
+}
+
+.sideBar {
+  padding: 35px;
+  padding-right: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

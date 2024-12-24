@@ -1,0 +1,57 @@
+.container {
+  height: calc(100vh - 86px);
+  width: 85px;
+  background-color: white;
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 42px; */
+
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.25);
+  animation: slideIn 0.35s ease-in-out forwards;
+}
+.singleItemContainer {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.multipleItemsContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 47px;
+}
+.icon {
+  height: 33px;
+  width: 33px;
+}
+.iconContainer {
+  color: #1d1d1f;
+  transition: 0.13s;
+}
+.iconContainer:hover {
+  color: #67b99a;
+}
+
+.active {
+  color: #67b99a;
+  transition: 0.13s;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
