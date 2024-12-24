@@ -1,0 +1,30 @@
+.eventList {
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.25);
+  height: 520px;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addIcon {
+  height: 33px;
+  width: 33px;
+  color: #67b99a;
+  cursor: pointer;
+  transition: 0.13s;
+}
+.addIcon:hover {
+  color: white;
+}
