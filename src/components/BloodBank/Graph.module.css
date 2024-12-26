@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  padding-block: 10px;
+  padding-left: 40px;
+}
+
+.line {
+  width: 1.3px;
+  height: 230px;
+  opacity: 0.2;
+  background: #585858;
+  padding-bottom: 18px;
+}
+
+.YAxis {
+  display: flex;
+  flex-direction: column;
+  padding-block: 15px;
+  justify-content: center;
+  gap: 35px;
+  align-items: center;
+  padding-right: 12px;
+  padding-bottom: 18px;
+}
+
+.XAxis {
+  padding-left: 20px;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.XAxisBar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}

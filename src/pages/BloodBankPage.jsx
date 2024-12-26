@@ -1,5 +1,9 @@
 import React from "react";
 import classes from "./Page.module.css";
+import BloodStock from "../components/BloodBank/BloodStock";
+import styles from "./BloodBankPage.module.css";
+import AddStockForm from "../components/BloodBank/AddStockForm";
+import RemoveStockForm from "../components/BloodBank/RemoveStockForm";
 
 function BloodBankPage() {
   return (
@@ -9,7 +13,11 @@ function BloodBankPage() {
         Here you can monitor blood stocks, add new donations to inventory, and
         see real-time updates of different blood types.
       </p>
-      {/* Replace with your actual content or components */}
+      <div className={styles.container}>
+        <BloodStock />
+        <AddStockForm />
+        <RemoveStockForm />
+      </div>
     </div>
   );
 }

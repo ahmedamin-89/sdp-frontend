@@ -1,0 +1,6 @@
+.bar {
+  width: 15px;
+  background-color: #67b99a;
+  transition: height 0.3s ease;
+  border-radius: 4px;
+}

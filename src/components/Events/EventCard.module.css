@@ -5,6 +5,7 @@
   border-radius: 12px;
   position: relative;
   transition: background-color 0.2s;
+  cursor: pointer;
 }
 
 .container:hover {
